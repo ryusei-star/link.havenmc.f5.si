@@ -73,9 +73,11 @@
             0% {
                 transform: translate(0, 0) scale(1);
             }
+
             50% {
                 transform: translate(30px, 20px) scale(1.1);
             }
+
             100% {
                 transform: translate(0, 0) scale(1);
             }
@@ -129,6 +131,7 @@
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -187,15 +190,15 @@
             height: 65px;
         }
 
-        .link-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.08);
-            border-color: rgba(99, 102, 241, 0.2);
-        }
+            .link-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(99, 102, 241, 0.08);
+                border-color: rgba(99, 102, 241, 0.2);
+            }
 
-        .link-card:active {
-            transform: translateY(0);
-        }
+            .link-card:active {
+                transform: translateY(0);
+            }
 
         .link-icon {
             width: 36px;
@@ -254,26 +257,26 @@
             .container {
                 padding: 30px 15px;
             }
-            
+
             .title {
                 font-size: 2.8rem;
             }
-            
+
             .links-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .link-card {
                 height: 60px;
             }
-            
+
             .link-icon {
                 width: 32px;
                 height: 32px;
                 min-width: 32px;
                 margin-right: 12px;
             }
-            
+
             .link-title {
                 font-size: 0.9rem;
             }
@@ -283,16 +286,16 @@
             .container {
                 padding: 25px 12px;
             }
-            
+
             .title {
                 font-size: 2.2rem;
             }
-            
+
             .link-card {
                 height: 55px;
                 padding: 12px;
             }
-            
+
             .link-icon {
                 width: 28px;
                 height: 28px;
@@ -300,7 +303,7 @@
                 margin-right: 10px;
                 border-radius: 8px;
             }
-            
+
             .link-title {
                 font-size: 0.85rem;
             }
@@ -515,6 +518,18 @@
                         <path d="M12 5l7 7-7 7"></path>
                     </svg>
                 </a>
+                <a href="https://status.havenmc.f5.si" class="link-card" target="_blank">
+                    <div class="link-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <span class="link-title">サーバーステータス</span>
+                    <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
                 <a href="https://x.com/_HavenMC_Server" class="link-card" target="_blank">
                     <div class="link-icon">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -548,8 +563,7 @@
         </footer>
     </div>
 
-    <script>
-        function createShapes() {
+    <script>function createShapes() {
             const container = document.getElementById('bg-shapes');
             const shapeCount = 5;
 
@@ -613,7 +627,6 @@
         window.addEventListener('DOMContentLoaded', () => {
             createShapes();
             createParticles();
-        });
-    </script>
+        });</script>
 </body>
 </html>
